@@ -1,0 +1,21 @@
+// Variáveis
+@import 'settings/variable.scss';
+
+// Objetos
+@import 'Objects/Layout.scss';
+
+// Genéricos
+@import 'Generic/Normalize.scss';
+
+// Responsividade
+@import 'Base/Responsive.scss';
+
+// Containers
+@import 'containers/home.scss';
+
+// Component
+@import 'component/soft-button.scss';
+@import 'component/tag-button.scss';
+@import 'component/tag.scss';
+@import 'component/card.scss';
+@import 'component/slide.scss';

@@ -1,0 +1,269 @@
+.card-motivation {
+  // $color: $color-accent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  gap: 0.5em;
+  border: none;
+  border-width: 0;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  width: 17rem;
+  height: 8rem;
+
+  transition: background-color 150ms ease-in, color 150ms ease-in;
+  [class*='card-motivation-title'] {
+    transition: color 150ms ease-in;
+  }
+
+  col {
+    div {
+      margin-left: 0.9rem;
+    }
+  }
+
+  svg {
+    margin: 0;
+    width: 1.375em;
+    height: 1.375em;
+  }
+}
+
+.card-motivation-number {
+  font-family: 'Londrina Outline', cursive;
+}
+
+.card-area-treinamento {
+  width: 21rem !important;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 35px;
+    background: $color-green;
+    bottom: 0;
+    top: 9.562rem;
+  }
+}
+
+.card-share {
+  .cardbody-share-information {
+    background-color: #222429;
+
+    transform: translateY(110%);
+    opacity: 0%;
+    transition: all 0.2s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 3px;
+      height: 56px;
+      background: #4c84fc;
+      border-radius: 999px;
+    }
+
+    p {
+      margin-left: 16px;
+    }
+  }
+  &:hover {
+    .cardbody-share-information {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+.card-video {
+  .icon-video-youtube {
+    color: red;
+  }
+
+  .tag-video {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cardbody-area-treinamento {
+  width: 21rem;
+  height: 21rem;
+
+  .cardbody-area-treinamento-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .subtitle-cardbody-treinamento {
+    line-height: 1.5em;
+  }
+}
+
+.container-area-bicolor {
+  width: 69rem !important;
+  .cardbody-area-bicolor {
+    height: 22rem;
+
+    .quadro-1 {
+      height: 22rem;
+      color: $gray-300;
+      clip-path: polygon(0 0, calc(100% - 4vw) 0, 100% 100%, 0 100%);
+      margin-right: -4vw;
+      position: relative;
+      z-index: 10;
+
+      .container-quadro-1-bicolor {
+        padding-left: 3.75rem;
+        padding-right: 7.5rem;
+
+        .link-direct-bicolor {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .quadro-2 {
+      height: 22rem;
+      width: 34rem;
+
+      background-color: #dedfe0;
+    }
+  }
+}
+
+.container-slide {
+  background-color: #2c2c2c;
+}
+
+.coluna-apresentador {
+  width: 70rem !important;
+
+  .card-apresentador {
+    height: 27rem;
+    .cardbody-apresentador {
+      .img-background-apresentador {
+        width: 18.4375rem;
+        height: 18.5rem;
+        position: absolute;
+        bottom: -0.1rem;
+      }
+
+      .quadro1-apresentador {
+        height: 27rem;
+
+        .controle-hero-slide {
+          .seta-esquerda-controle {
+            width: 3rem;
+            height: 3rem;
+          }
+
+          .seta-direita-controle {
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+
+        .nome-autor {
+          &::before {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: $color-accent;
+            left: 60px;
+          }
+        }
+
+        .nome-autor-secondary {
+          svg {
+            color: transparent !important;
+          }
+          span {
+            font-size: 14px;
+            color: $color-gray;
+          }
+        }
+      }
+      .quadro2-apresentador {
+        height: 27rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 71%;
+          height: 73%;
+          border: 10px solid #64ccac;
+          box-sizing: content-box;
+          left: 0;
+          clip-path: polygon(55% 0, 100% 0, 100% 100%, 67% 100%);
+        }
+      }
+    }
+  }
+}
+
+.controle-hero-slide {
+  .seta-esquerda-controle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .seta-direita-controle {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+// .card-motivation-title {
+//   color: $color-accent;
+// }
+
+@each $name, $value in $colors {
+  .card-motivation-title--#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .card-motivation--#{$name} {
+    background-color: scale-color(
+      $color: $value,
+      $lightness: 10%,
+      $alpha: -90%
+    );
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+      color: $color-white;
+      background-color: $value;
+      .card-motivation-title--#{$name} {
+        color: $color-white;
+      }
+      svg {
+        fill: $color-white;
+      }
+    }
+    &::before {
+      background-color: scale-color(
+        $color: $value,
+        $lightness: 20%,
+        $alpha: -70%
+      );
+    }
+  }
+}

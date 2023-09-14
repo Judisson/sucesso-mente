@@ -1,0 +1,61 @@
+.tag-button {
+  // $color: $color-accent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  gap: 0.5em;
+  border: none;
+  border-width: 0;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+
+  svg {
+    margin: 0;
+    width: 1.375em;
+    height: 1.375em;
+  }
+}
+
+.tag-button-share {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+@each $name, $value in $colors {
+  .soft-button--#{$name} {
+    background-color: scale-color(
+      $color: $value,
+      $lightness: 10%,
+      $alpha: -90%
+    );
+    &,
+    &:hover:not(:disabled),
+    &:active:not(:disabled),
+    &:focus:not(:disabled) {
+      color: scale-color(
+        $color: $value,
+        $lightness: 10%,
+        $alpha: -10%,
+        $saturation: 20%
+      );
+      svg {
+        fill: scale-color(
+          $color: $value,
+          $lightness: 10%,
+          $alpha: -10%,
+          $saturation: 20%
+        );
+      }
+    }
+    &::before {
+      background-color: scale-color(
+        $color: $value,
+        $lightness: 20%,
+        $alpha: -70%
+      );
+    }
+  }
+}

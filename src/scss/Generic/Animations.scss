@@ -1,0 +1,49 @@
+@mixin growin-animation {
+  animation: grow-in 400ms ease;
+}
+@mixin pulse-animation($repeat) {
+  animation: half-pulse 130ms ease-in alternate;
+  animation-iteration-count: #{$repeat * 2};
+}
+
+.fade-in {
+  animation: fade-in 200ms;
+}
+
+@keyframes grow-in {
+  from {
+    scale: 0;
+    rotate: 30deg;
+  }
+  to {
+    scale: 1;
+    rotate: 0;
+  }
+}
+
+@keyframes half-pulse {
+  0% {
+    scale: inherit;
+  }
+  100% {
+    scale: 1.4;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

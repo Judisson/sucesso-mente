@@ -1,0 +1,89 @@
+.pagina-conteudo {
+  padding-inline: 20px;
+  & > .container {
+    padding-inline: 0;
+  }
+  .overflow-container {
+    margin-inline: -20px;
+    padding-inline: 20px;
+    width: 100vw;
+  }
+}
+.conteudo-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+
+  background-color: $gray-900;
+  background-position: 50% bottom;
+  background-size: cover;
+  display: grid;
+
+  .no-auth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .backdrop {
+      display: inline-grid;
+      place-items: center;
+      position: absolute;
+      inset: 0;
+      background-color: #000a;
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: fit-content;
+      *:not(button) {
+        color: $color-dusty-white;
+      }
+      a {
+        color: $color-white;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+  .loading {
+    position: absolute;
+    place-self: center;
+    width: 3rem;
+    height: 3rem;
+    color: $color-dusty-white;
+  }
+}
+
+.programa-proximovideo-control {
+  background-color: $gray-100;
+  border: 1px solid $gray-300;
+  padding: 10px 0px;
+  font-weight: 500;
+
+  .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 10 1 auto;
+  }
+}
+
+.programa-proximovideo-card {
+  max-height: 40px;
+}
+
+.programa-info-autor {
+  font-size: large;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.badge {
+  font-size: 0.875rem;
+}
