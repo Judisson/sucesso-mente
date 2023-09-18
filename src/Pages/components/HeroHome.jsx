@@ -36,7 +36,7 @@ const HomeHero = () => {
   return (
     <>
       <section className="hero pb-5">
-        <Container className="hero__body">
+        {/* <Container className="hero__body">
           <Row>
             <Col className="align-items-center pb-3 text-black">
               <div className="tag tag--primary rounded-pill w-25">
@@ -64,7 +64,7 @@ const HomeHero = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
         <div className="hero__shadow" />
         <div className="hero__image" />
       </section>
