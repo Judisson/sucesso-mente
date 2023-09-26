@@ -1,13 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from '@/Layout/MainLayout';
-import Cursos from '@/Pages/Cursos';
+
 import Home from '@/Pages/Home';
+import Treinamentos from '@/Pages/Treinamentos';
+import LivroseEbooks from '@/Pages/LivroseEbooks';
+import Mais from '@/Pages/Mais';
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/cursos" element={<Cursos />} />
+      <Route path="/treinamentos" element={<Treinamentos />} />
+      <Route path="/livroseebooks" element={<LivroseEbooks />} />
+      <Route path="/mais" element={<Mais />} />
       <Route path="/pages" element={<></>} />
     </Routes>
   );
