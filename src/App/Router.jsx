@@ -14,6 +14,8 @@ const Router = () => {
       <Route path="/livroseebooks" element={<LivroseEbooks />} />
       <Route path="/mais" element={<Mais />} />
       <Route path="/pages" element={<></>} />
+      <Route path="*" element={<div>Página não encontrada</div>} />
+
     </Routes>
   );
 };
