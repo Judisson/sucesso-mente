@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 // import { useDispatch } from 'react-redux';
 // import { fetchCategorias } from '../../../redux/actions/categoriaActions';
 
-import { Container } from 'reactstrap';
+import { Container } from "reactstrap";
 
 const Home = () => {
   return (
@@ -10,9 +10,9 @@ const Home = () => {
       <div className="imagem-estatica">
         <img src="https://via.placeholder.com/1300x500.png" />
       </div>
-      
-      <Container className="pt-5 pb-5">
-        <div className="gap-4 d-grid">
+
+      <Container className="pt-5 pb-5 container-principal-home">
+        <div className="container-bemvindo">
           <h2 className="text-uppercase text-center fw-light">
             Construindo Mentes de Sucesso
           </h2>
@@ -39,7 +39,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="container-destaque-treinamento">
           <h4 className="text-uppercase">Destaques do Treinamento:</h4>
           <ol>
             <li>
@@ -76,7 +76,7 @@ const Home = () => {
             </li>
           </ol>
         </div>
-        <div>
+        <div className="container-resultado">
           <h4 className="text-uppercase">Resultados Esperados:</h4>
           <p>
             Ao concluir o curso "Construindo uma Mentalidade de Sucesso", os
@@ -119,6 +119,46 @@ const Home = () => {
             crescimento pessoal.
             <strong>Inscreva-se agora mesmo!</strong>
           </p>
+        </div>
+        <div className="container-treinamento">
+          <h2>TREINAMENTO</h2>
+
+          <div className="conteudo">
+            <div className="elemento">
+              <img src="https://via.placeholder.com/300x300.png" />
+              <h4>Construindo Mentes de Sucesso</h4>
+              <span>
+                Um treinamento de desenvolvimento pessoal, para você libertar
+                todo o seu potencial e construir uma vida verdadeiramente
+                extraordinária, com exercícios práticos e técnicas comprovadas
+                cientificamente para que você consiga acessar todo seu poder
+                interior.
+              </span>
+            </div>
+            <div className="elemento">
+              <img src="https://via.placeholder.com/300x300.png" />
+              <h4>Vencendo a Procrastinação</h4>
+              <span>
+                Conquiste o sucesso! Supere a procrastinação e alcance suas
+                metas com nosso treinamento intensivo! Aprenda estratégias
+                comprovadas, domine o gerenciamento do tempo e vença o medo do
+                fracasso. Liberte seu verdadeiro potencial e transforme sua vida
+                pessoal e profissional.
+              </span>
+            </div>
+            <div className="elemento">
+              <img src="https://via.placeholder.com/300x300.png" />
+              <h4>Produtividade</h4>
+              <span>
+                Descubra o poder da produtividade exponencial! Aumente sua
+                eficiência, conquiste mais com menos esforço e alcance
+                resultados surpreendentes com nosso treinamento exclusivo. Não
+                perca essa oportunidade de se destacar e transformar sua rotina
+                profissional e pessoal. Eleve a sua produtividade a um novo
+                patamar.
+              </span>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
