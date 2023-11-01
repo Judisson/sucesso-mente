@@ -2,15 +2,15 @@ import React, { useEffect } from 'react';
 // import { useDispatch } from 'react-redux';
 // import { fetchCategorias } from '../../../redux/actions/categoriaActions';
 
-import HomeLayout from '@/Layout/MainLayout';
-import withLayout from '@/Layout/withLayout';
-import HeroHome from './components/HeroHome';
 import { Container } from 'reactstrap';
 
 const Home = () => {
   return (
     <div className="pagina-home">
-      <HeroHome />
+      <div className="imagem-estatica">
+        <img src="https://via.placeholder.com/1300x500.png" />
+      </div>
+      
       <Container className="pt-5 pb-5">
         <div className="gap-4 d-grid">
           <h2 className="text-uppercase text-center fw-light">
@@ -124,4 +124,4 @@ const Home = () => {
     </div>
   );
 };
-export default withLayout(HomeLayout)(Home);
+export default Home;

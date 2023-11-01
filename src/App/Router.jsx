@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import MainLayout from '@/Layout/MainLayout';
 
 import Home from '@/Pages/Home';
 import Treinamentos from '@/Pages/Treinamentos';
@@ -15,7 +14,6 @@ const Router = () => {
       <Route path="/mais" element={<Mais />} />
       <Route path="/pages" element={<></>} />
       <Route path="*" element={<div>Página não encontrada</div>} />
-
     </Routes>
   );
 };
