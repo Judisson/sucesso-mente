@@ -3,6 +3,9 @@ import React, { useEffect } from "react";
 // import { fetchCategorias } from '../../../redux/actions/categoriaActions';
 
 import { Container } from "reactstrap";
+import instagram from "@/shared/svg/instagram.svg";
+import tiktok from "@/shared/svg/tiktok.svg";
+import youtube from "@/shared/svg/youtube.svg";
 
 const Home = () => {
   return (
@@ -158,6 +161,49 @@ const Home = () => {
                 patamar.
               </span>
             </div>
+          </div>
+        </div>
+        <div className="visualizacao-ebook">
+          <img src="https://via.placeholder.com/300x300.png" />
+          <button>+ Visualizar</button>
+          <div className="info">
+            <span>7 Passos para construir uma Mentalidade de Sucesso</span>
+            <span>$0.00</span>
+          </div>
+        </div>
+        <div className="baixe-ebook">
+          <h2>Baixe Gratuitamente esse ebook</h2>
+          <div className="texto">
+            <span>
+              Neste Ebook, você aprenderá identificar onde você está, e os
+              passos para chegar onde você deseja. Queremos te presentear com
+              esse conhecimento que poderá mudar totalmente a sua vida.{" "}
+            </span>
+            <span>
+              Preencha com seu melhor e-mail e receba diretamente de nossa
+              equipe esse presente
+            </span>
+          </div>
+          <div className="enviar-email">
+            <input type="email" name="" id="" />
+            <button>Enviar</button>
+          </div>
+        </div>
+        <div className="redes">
+          <img src={instagram} alt="Instagram" />
+          <img src={tiktok} alt="Instagram" />
+          <img src={youtube} alt="Instagram" />
+        </div>
+        <div className="contato">
+          <h3>CONTATO</h3>
+          <div className="sugestao-mensagem">
+            <span>Estamos ansiosos para ouvir de você!</span>
+            <span>
+              Se você tem alguma dúvida, sugestão, ou gostaria de obter mais
+              informações sobre nossos serviços, estamos aqui para ajudar!
+            </span>
+            <span>Construindo Mentes de Sucesso</span>
+            <button>Enviar Email</button>
           </div>
         </div>
       </Container>
