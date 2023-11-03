@@ -10,6 +10,22 @@
 
   button {
     position: absolute;
-    bottom: 105px;
+    bottom: 125px;
+
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+
+    width: 340px;
+    height: 50px;
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+
+    gap: 20px;
   }
 }
