@@ -10,8 +10,11 @@
 // Responsividade
 @import 'Base/Responsive.scss';
 
-// Containers
+// Pages
 @import 'Pages/home.scss';
+@import 'Pages/treinamentos.scss';
+@import 'Pages/livroseebooks.scss';
+@import 'Pages/mais.scss';
 
 // Component
 @import 'component/slide.scss';
