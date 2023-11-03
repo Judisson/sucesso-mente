@@ -141,14 +141,17 @@ const Home = () => {
             </span>
           </div>
           <div className="enviar-email">
-            <input type="email" name="" id="" />
+            <input type="email" name="Email" id="" placeholder="Email" />
             <button>Enviar</button>
           </div>
         </div>
         <div className="redes">
-          <img src={instagram} alt="Instagram" />
-          <img src={tiktok} alt="Instagram" />
-          <img src={youtube} alt="Instagram" />
+          <h2>SIGA MENTALIDADE DE SUCESSO EM NOSSAS REDES SOCIAIS</h2>
+          <div className="icons">
+            <img src={instagram} className="rede instagram" alt="Instagram" />
+            <img src={tiktok} className="rede tiktok" alt="Tiktok" />
+            <img src={youtube} className="rede youtube" alt="Youtube" />
+          </div>
         </div>
         <div className="contato">
           <h3>CONTATO</h3>
