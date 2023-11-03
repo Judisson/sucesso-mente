@@ -6,8 +6,8 @@ const Treinamento = () => {
 
     <div className="conteudo">
       <div className="elemento">
-        <img src="https://via.placeholder.com/300x300.png" />
-        <h4>Construindo Mentes de Sucesso</h4>
+        <img src="https://via.placeholder.com/250x250.png" />
+        <h5>Construindo Mentes de Sucesso</h5>
         <span>
           Um treinamento de desenvolvimento pessoal, para você libertar
           todo o seu potencial e construir uma vida verdadeiramente
@@ -17,8 +17,8 @@ const Treinamento = () => {
         </span>
       </div>
       <div className="elemento">
-        <img src="https://via.placeholder.com/300x300.png" />
-        <h4>Vencendo a Procrastinação</h4>
+        <img src="https://via.placeholder.com/250x250.png" />
+        <h5>Vencendo a Procrastinação</h5>
         <span>
           Conquiste o sucesso! Supere a procrastinação e alcance suas
           metas com nosso treinamento intensivo! Aprenda estratégias
@@ -28,8 +28,8 @@ const Treinamento = () => {
         </span>
       </div>
       <div className="elemento">
-        <img src="https://via.placeholder.com/300x300.png" />
-        <h4>Produtividade</h4>
+        <img src="https://via.placeholder.com/250x250.png" />
+        <h5>Produtividade</h5>
         <span>
           Descubra o poder da produtividade exponencial! Aumente sua
           eficiência, conquiste mais com menos esforço e alcance
