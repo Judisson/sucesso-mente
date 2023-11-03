@@ -16,42 +16,14 @@
       display: grid;
       gap: 1.5rem;
     }
-    .container-treinamento {
-      h2 {
-      }
-
-      .conteudo {
-        .elemento {
-          img {
-          }
-          h4 {
-          }
-          span {
-          }
-        }
-      }
-    }
-
-    .visualizacao-ebook {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      img {
-        max-width: 300px;
-      }
-
-      button {
-        position: absolute;
-        bottom: 105px;
-      }
-    }
 
     .baixe-ebook {
-      h2 {}
-      .texto {}
-      .enviar-email {}
+      h2 {
+      }
+      .texto {
+      }
+      .enviar-email {
+      }
     }
 
     .redes {
@@ -59,6 +31,11 @@
         width: 30px;
         height: 30px;
         color: black;
+      }
+    }
+
+    .contato {
+      .sugestao-mensagem {
       }
     }
   }
