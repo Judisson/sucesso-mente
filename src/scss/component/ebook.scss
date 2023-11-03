@@ -1,0 +1,15 @@
+.visualizacao-ebook {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 300px;
+  }
+
+  button {
+    position: absolute;
+    bottom: 105px;
+  }
+}
