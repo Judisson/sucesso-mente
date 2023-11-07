@@ -17,35 +17,39 @@ const Home = () => {
       </div>
 
       <Container className="pt-5 pb-5 container-principal-home">
-        <div className="container-bemvindo">
+        <div className="container-bemvindo mb-4">
           <h2 className="text-uppercase text-center fw-light">
             Construindo Mentes de Sucesso
           </h2>
           <h4 className="text-uppercase fw-light mt-3">BEM-VINDOS!</h4>
           <div>
             <p>
-              Você já se perguntou por que algumas pessoas são bem-sucedidas em
-              suas carreiras e em suas vidas pessoais, enquanto outras parecem
-              estar sempre lutando? A resposta pode estar em sua Mentalidade.
-              Ter uma Mentalidade de Sucesso é fundamental para alcançar seus
-              objetivos em todas as áreas da vida!
+              <strong>Você</strong> já se perguntou por que algumas pessoas são{" "}
+              <strong>bem-sucedidas</strong> em suas carreiras e em suas vidas
+              pessoais, enquanto outras parecem estar{" "}
+              <strong>sempre lutando?</strong> A resposta pode estar em sua
+              Mentalidade. Ter uma Mentalidade de Sucesso é fundamental para
+              alcançar seus objetivos em todas as áreas da vida!
             </p>
 
             <p>
-              Nossa Missão é ajudar você com esse treinamento de Desenvolvimento
-              Pessoal que foi projetado para capacitar indivíduos que desejam
-              alcançar o sucesso em todas as áreas da vida, ao fortalecer sua
-              mentalidade. Acreditamos que cada indivíduo possui a capacidade de
-              moldar sua própria realidade. O curso abordará técnicas
-              cientificamente comprovadas para construir uma mentalidade
-              positiva, resiliente e focada, proporcionando aos participantes as
-              ferramentas necessárias para superar desafios, maximizar o
-              potencial e alcançar seus objetivos de forma consistente.
+              Nossa <strong>Missão</strong> é ajudar você com esse treinamento
+              de Desenvolvimento Pessoal que foi projetado para capacitar
+              indivíduos que desejam alcançar o sucesso em todas as áreas da
+              vida, ao fortalecer sua mentalidade. Acreditamos que cada
+              indivíduo possui a capacidade de moldar sua própria realidade. O
+              curso abordará técnicas cientificamente comprovadas para construir
+              uma mentalidade positiva, resiliente e focada, proporcionando aos
+              participantes as ferramentas necessárias para superar desafios,
+              maximizar o potencial e alcançar seus objetivos de forma
+              consistente.
             </p>
           </div>
         </div>
-        <div className="container-destaque-treinamento">
-          <h4 className="text-uppercase">Destaques do Treinamento:</h4>
+        <div className="container-destaque-treinamento mb-5">
+          <h4 className="text-uppercase mb-4 pb-2">
+            Destaques do Treinamento:
+          </h4>
           <ol>
             <li>
               Autoconhecimento: Os participantes serão incentivados a explorar
@@ -82,7 +86,7 @@ const Home = () => {
           </ol>
         </div>
         <div className="container-resultado">
-          <h4 className="text-uppercase">Resultados Esperados:</h4>
+          <h4 className="text-uppercase mb-4 pb-2">Resultados Esperados:</h4>
           <p>
             Ao concluir o curso "Construindo uma Mentalidade de Sucesso", os
             participantes estarão preparados para colher os frutos de uma
@@ -119,11 +123,11 @@ const Home = () => {
             comece a transformar sua vida hoje mesmo!
           </p>
 
-          <p>
+          <p className="m-0">
             Junte-se a nós nesta incrível jornada de autodescoberta e
             crescimento pessoal.
-            <strong>Inscreva-se agora mesmo!</strong>
           </p>
+          <strong>Inscreva-se agora mesmo!</strong>
         </div>
         <Treinamento />
         <Ebook />
@@ -148,22 +152,36 @@ const Home = () => {
         <div className="redes">
           <h2>SIGA MENTALIDADE DE SUCESSO EM NOSSAS REDES SOCIAIS</h2>
           <div className="icons">
-            <img src={instagram} className="rede instagram" alt="Instagram" />
-            <img src={tiktok} className="rede tiktok" alt="Tiktok" />
-            <img src={youtube} className="rede youtube" alt="Youtube" />
+            <div className="background instagram">
+              <img src={instagram} className="rede" alt="Instagram" />
+            </div>
+            <div className="background tiktok">
+              <img src={tiktok} className="rede" alt="Tiktok" />
+            </div>
+            <div className="background youtube">
+              <img src={youtube} className="rede" alt="Youtube" />
+            </div>
           </div>
         </div>
         <div className="contato">
           <h3>CONTATO</h3>
           <div className="sugestao-mensagem">
-            <span>Estamos ansiosos para ouvir de você!</span>
+            <span>
+              <strong>Estamos ansiosos para ouvir de você!</strong>
+            </span>
             <span>
               Se você tem alguma dúvida, sugestão, ou gostaria de obter mais
               informações sobre nossos serviços, estamos aqui para ajudar!
             </span>
-            <span>Construindo Mentes de Sucesso</span>
-            <button>Enviar Email</button>
+            <span>
+              <strong>Construindo Mentes de Sucesso</strong>
+            </span>
           </div>
+          <button>
+            <a href="mailto:contato@construindomentesdesucesso.com.br">
+              Enviar e-mail
+            </a>
+          </button>
         </div>
       </Container>
     </div>
