@@ -1,7 +1,7 @@
 import { AiOutlineMenu } from 'react-icons/ai';
 import { RxMagnifyingGlass } from 'react-icons/rx';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import Icon2 from '@/Components/Icon';
+import Icon from '@/Components/Icon';
 import Logo from '@/shared/svg/Logo.png';
 
 
@@ -25,13 +25,13 @@ const TopBar = () => {
           LIVROS E EBOOKS 
         </NavLink>
         <NavLink to="/mais" title="Mais">
-          MAIS <Icon2 icon={MdKeyboardArrowDown} size={2.5} color={'white'} />
+          MAIS <Icon icon={MdKeyboardArrowDown} size={2.5} color={'white'} />
         </NavLink>
       </nav>
 
-      <span className=" d-flex gap-5">
-        <Icon2 icon={RxMagnifyingGlass} size={2.5} color={'white'} />
-        <Icon2 icon={AiOutlineMenu} size={2.5} color={'white'} />
+      <span className="icons-pesquisa d-flex gap-5">
+        <Icon icon={RxMagnifyingGlass} size={2.5} color={'white'} />
+        <Icon icon={AiOutlineMenu} size={2.5} color={'white'} />
       </span>
     </div>
   );
