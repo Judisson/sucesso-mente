@@ -1,0 +1,51 @@
+.modal-ebook {
+
+  .modal-header {
+    border: 0;
+
+    button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+
+      background-color: white;
+
+      border: 0;
+
+      margin-top: 10px;
+
+      svg {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px;
+
+    .coluna.dois {
+      h4 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        margin-bottom: 30px;
+      }
+      .texto {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+      }
+    }
+  }
+}
+
+.modal {
+  --bs-modal-width: 900px;
+}
