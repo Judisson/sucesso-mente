@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <div className="pagina-home">
       <div className="imagem-estatica">
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://drive.google.com/uc?export=view&id=1uDLZkWFrvikT14gvv06fdfL7-SA9IVEB" />
       </div>
+      
 
       <Container className="pt-5 pb-5 container-principal-home">
         <div className="container-bemvindo mb-4">
