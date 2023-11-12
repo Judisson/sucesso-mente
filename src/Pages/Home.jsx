@@ -1,13 +1,10 @@
-// import React, { useEffect } from "react";
-// import { useDispatch } from 'react-redux';
-// import { fetchCategorias } from '../../../redux/actions/categoriaActions';
-
 import { Container } from "reactstrap";
 import instagram from "@/shared/svg/instagram.svg";
 import tiktok from "@/shared/svg/tiktok.svg";
 import youtube from "@/shared/svg/youtube.svg";
 import Treinamento from "@/Components/Treinamento";
 import Ebook from "@/Components/ebook";
+import FormEmail from "@/Components/FormEmail";
 
 const Home = () => {
   return (
@@ -15,7 +12,6 @@ const Home = () => {
       <div className="imagem-estatica">
         <img src="https://drive.google.com/uc?export=view&id=1uDLZkWFrvikT14gvv06fdfL7-SA9IVEB" />
       </div>
-      
 
       <Container className="pt-5 pb-5 container-principal-home">
         <div className="container-bemvindo mb-4">
@@ -145,10 +141,8 @@ const Home = () => {
               equipe esse presente
             </span>
           </div>
-          <div className="enviar-email">
-            <input type="email" name="Email" id="" placeholder="Email" />
-            <button>Enviar</button>
-          </div>
+
+          <FormEmail />
         </div>
         <div className="redes">
           <h2>SIGA MENTALIDADE DE SUCESSO EM NOSSAS REDES SOCIAIS</h2>
