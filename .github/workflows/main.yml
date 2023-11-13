@@ -29,8 +29,8 @@ jobs:
     needs: build
 
   steps:
-  - name: Deploy
-    uses: peaceiris/actions-gh-pages@v3
+  - name: Checkout repository
+  uses: peaceiris/actions-gh-pages@v3
     with:
       github_token: ${{ secrets.TOKEN_ACTION_SITE }}
       publish_dir: ./dist/sucesso-mente 
