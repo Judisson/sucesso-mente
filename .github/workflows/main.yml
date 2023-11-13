@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
 
-  steps:
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.TOKEN_ACTION_SITE }}
-        publish_dir: ./dist/sucesso-mente
+    steps:
+      - name: Checkout repository
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN_ACTION_SITE }}
+          publish_dir: ./dist/sucesso-mente
