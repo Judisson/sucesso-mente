@@ -31,6 +31,5 @@ jobs:
   steps:
   - name: Checkout repository
   uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.TOKEN_ACTION_SITE }}
-      publish_dir: ./dist/sucesso-mente 
+    with: github_token: ${{ secrets.TOKEN_ACTION_SITE }}
+    publish_dir: ./dist/sucesso-mente 
