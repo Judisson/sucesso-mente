@@ -8,12 +8,15 @@
   background-color: #333;
 
   img {
-    width: 80px;
-    height: 80px;
+    visibility: hidden;
+
+    width: 70px;
+    height: 70px;
   }
 
   .topbar-navegador {
     display: flex;
+    align-items: center;
     gap: 3rem;
     font-family: "Open Sans", sans-serif;
 
@@ -22,11 +25,30 @@
         color: #5084fc;
         svg {
           color: #5084fc !important;
+          
         }
       }
       text-decoration: none;
       color: white;
       font-size: 13px;
+    }
+
+    a {
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+      &.active {
+        svg {
+          width: 50px;
+          height: 50px;
+        } 
+        .icon-brain-flash {
+          path {
+            fill: #5084fc !important;
+          }
+        }
+      }
     }
   }
 
@@ -34,6 +56,14 @@
     visibility: hidden;
   }
 }
+
+// .logo-meio {
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .logo-meio:hover {
+// }
 
 .header-topbar-web {
   z-index: 1;
