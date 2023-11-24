@@ -1,0 +1,122 @@
+.pagina-videos {
+  // background-color: black;
+  height: 100vh;
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .colunas-videos {
+    .videos-coadjuvantes {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .thumb-video {
+        position: relative;
+        // background-color: white;
+
+        img {
+          border-radius: 10px;
+
+          cursor: pointer;
+        }
+        &:hover {
+          opacity: 85%;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background-color: white;
+
+          position: absolute;
+
+          width: 40px;
+          height: 40px;
+
+          margin-top: 1rem;
+
+          border-radius: 999px;
+
+          svg {
+            color: red;
+          }
+        }
+      }
+      &.esquerda {
+        align-items: end;
+
+        span {
+          top: 0;
+          right: 0;
+
+          margin-right: 1rem;
+        }
+      }
+      &.direita {
+        align-items: start;
+
+        span {
+          top: 0;
+          left: 0;
+
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .video-princiapl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .thumb-video {
+        position: relative;
+        background-color: white;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+
+          cursor: pointer;
+        }
+        &:hover {
+          opacity: 85%;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: absolute;
+
+          background-color: white;
+
+          width: 40px;
+          height: 40px;
+
+          border-radius: 999px;
+
+          svg {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
