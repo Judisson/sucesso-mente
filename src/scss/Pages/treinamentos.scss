@@ -1,11 +1,10 @@
 .pagina-treinamentos {
   .container-principal-treinamentos {
     margin-top: 50px;
-    
+
     h2 {
       text-align: center;
       font-weight: 400;
-
     }
     .colunas {
       display: flex;
@@ -20,6 +19,8 @@
         .foto-jociel {
           img {
             border-radius: 999px;
+            max-width: 300px;
+            max-height: 300px;
           }
         }
 
@@ -35,7 +36,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+
             gap: 20px;
 
             span {
