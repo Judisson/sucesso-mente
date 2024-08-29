@@ -1,29 +1,30 @@
 // Variáveis
-@import 'settings/variable.scss';
+@import "settings/variable.scss";
 
 // Objetos
-@import 'Objects/Layout.scss';
+@import "Objects/Layout.scss";
 
 // Genéricos
-@import 'Generic/Normalize.scss';
+@import "Generic/Normalize.scss";
 
 // Responsividade
-@import 'Base/Responsive.scss';
+@import "Base/Responsive.scss";
+@import "Responsive/treinamentos.scss";
+@import "Responsive/treinamento.scss";
 
 // Pages
-@import 'Pages/home.scss';
-@import 'Pages/treinamentos.scss';
-@import 'Pages/livroseebooks.scss';
-@import 'Pages/mais.scss';
-@import 'Pages/videos.scss';
+@import "Pages/home.scss";
+@import "Pages/treinamentos.scss";
+@import "Pages/livroseebooks.scss";
+@import "Pages/mais.scss";
+@import "Pages/videos.scss";
 
 // Component
-@import 'component/slide.scss';
-@import 'component/treinamento.scss';
-@import 'component/ebook.scss';
-@import 'component/buttonStyle.scss';
-@import 'component/modalEbook.scss';
+@import "component/slide.scss";
+@import "component/treinamento.scss";
+@import "component/ebook.scss";
+@import "component/buttonStyle.scss";
+@import "component/modalEbook.scss";
 
-// Responsive 
-@import 'Responsive/home.scss';
-
+// Responsive
+@import "Responsive/home.scss";

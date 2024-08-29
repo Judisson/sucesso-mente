@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+  .pagina-treinamentos {
+    .container-principal-treinamentos {
+      .colunas {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .coluna {
+          .foto-jociel {
+            display: flex;
+            justify-content: center !important;
+          }
+        }
+      }
+    }
+  }
+}
